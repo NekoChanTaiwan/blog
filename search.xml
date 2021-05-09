@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>筆記：Git 常用指令</title>
+      <link href="posts/e35f/"/>
+      <url>posts/e35f/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 設定本地 使用者 名稱/信箱 （初次使用必須設定）</span></span><br><span class="line">git config --global user.name</span><br><span class="line">git config --global user.email</span><br><span class="line"></span><br><span class="line"><span class="comment">## 初始化本地倉庫</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看本地倉庫狀態</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment">## 追蹤檔案至暫存區</span></span><br><span class="line">git add <span class="string">&#x27;檔案名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 提交至本地庫</span></span><br><span class="line">git commit -m <span class="string">&#x27;日誌訊息&#x27;</span> <span class="string">&#x27;檔案名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看日誌</span></span><br><span class="line">git reflog</span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看詳細日誌</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 版本穿梭</span></span><br><span class="line">git reset --hard <span class="string">&#x27;版本號&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## === 分支 ===</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 創建分支</span></span><br><span class="line">git branch <span class="string">&#x27;分支名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment">## 切換分支（切換至目標分支）</span></span><br><span class="line">git checkout <span class="string">&#x27;分支名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">##　合併分支（將目標分支合併至當前分支）</span></span><br><span class="line">git merge <span class="string">&#x27;分支名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## === 遠程倉庫 ===</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 查看當前所有 遠程倉庫地址別名</span></span><br><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line"><span class="comment">## 新增地址別名</span></span><br><span class="line">git remote add <span class="string">&#x27;地址別名&#x27;</span> <span class="string">&#x27;遠程倉庫地址&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 推送 本地&quot;分支&quot; 的內容至 遠程倉庫</span></span><br><span class="line">git push <span class="string">&#x27;地址別名&#x27;</span> <span class="string">&#x27;分支名稱&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 將 遠程倉庫 的內容 復製到本地</span></span><br><span class="line">git <span class="built_in">clone</span> <span class="string">&#x27;遠程倉庫地址&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 將 遠程倉庫分支 的最新內容拉取下來後與 當前本地分支合併</span></span><br><span class="line">git pull <span class="string">&#x27;遠程倉庫 地址/別名&#x27;</span> <span class="string">&#x27;遠程分支名稱&#x27;</span></span><br></pre></td></tr></table></figure><hr><p>封面來源 ：</p><ul><li><a href="https://www.pixiv.net/artworks/87543224">逆流茶会 - 要脱掉吗</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 筆記 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly 美化  (持續更新中)</title>
       <link href="posts/456/"/>
       <url>posts/456/</url>
