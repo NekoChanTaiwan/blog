@@ -37,20 +37,6 @@
   </url>
   
   <url>
-    <loc>http://nekochan.cf/about/index.html</loc>
-    
-    <lastmod>2021-05-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://nekochan.cf/categories/index.html</loc>
-    
-    <lastmod>2021-05-15</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://nekochan.cf/posts/c7f3/</loc>
     
     <lastmod>2021-05-15</lastmod>
@@ -73,6 +59,20 @@
   
   <url>
     <loc>http://nekochan.cf/posts/8f1b/</loc>
+    
+    <lastmod>2021-05-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://nekochan.cf/about/index.html</loc>
+    
+    <lastmod>2021-05-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://nekochan.cf/categories/index.html</loc>
     
     <lastmod>2021-05-15</lastmod>
     
